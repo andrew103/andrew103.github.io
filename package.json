@@ -1,0 +1,23 @@
+{
+  "name": "teambuilder",
+  "version": "1.0.0",
+  "description": "Website for building dev teams",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "bower": "^1.8.2",
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "bower": "^1.8.2",
+    "gulp": "^3.9.1",    
+    "del": "^2.2.0",
+    "gulp-browser": "^2.1.4",
+    "gulp-size": "^2.1.0",
+    "reactify": "^1.1.1"    
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
