@@ -1,2 +1,2 @@
 Flask==0.10.1
-SQLAlchemy==1.1.15
+Flask-PyMongo
