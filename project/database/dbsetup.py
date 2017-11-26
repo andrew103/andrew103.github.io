@@ -1,3 +1,6 @@
+
+# To-do: create chat table!
+
 from flask_pymongo import PyMongo, MongoClient
 import datetime
 
