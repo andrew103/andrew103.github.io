@@ -47,7 +47,7 @@ def apiProjects():
     projects = json.dumps(projects, default=json_util.default)
     return projects
     
-    ## This was my original attempt to jsonifying.
+    ## This was my original attempt at jsonifying.
     ## Leaving it here while I'm still figuring this out.
     # for i in range(len(projects)):
       # projects[i]["id"] = str(projects[i]["_id"])
