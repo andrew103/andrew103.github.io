@@ -28,7 +28,7 @@ user_records = [
   { "name": "Joe",
     "summary": "Developer ...",
     "email": "Joe@email.com",
-    "skills": ["JavaScript", "Reach", "Java"],
+    "skills": ["JavaScript", "React", "Java"],
     "roles": ["Front end"],
     "date" : datetime.datetime.utcnow()
   },
