@@ -30,6 +30,7 @@ user_records = [
     "email": "Joe@email.com",
     "skills": ["JavaScript", "React", "Java"],
     "roles": ["Front end"],
+    "project_favorites": None,
     "date" : datetime.datetime.utcnow()
   },
 
@@ -38,6 +39,7 @@ user_records = [
     "email": "Jack@email.com",
     "skills": ["CSS", "AngularJS"],
     "roles": ["Back end"],
+    "project_favorites": None,
     "date" : datetime.datetime.utcnow()
   }
 ]
@@ -46,16 +48,22 @@ user_ids = mydb.user.insert(user_records)
 
 
 project_records = [
-  { "name": "Joe",
-    "summary": "Developer ...",
+  { "name": "Project_1",
+    "summary": "Project summary ...",
     "skills": ["JavaScript", "React", "Java"],
     "roles": ["Front end", "Full stack"],
     "team_members": user_ids,
+    "is_active": True,
     "date" : datetime.datetime.utcnow()
   }
 ]
 
-mydb.project.insert(project_records)
+project_ids = mydb.project.insert(project_records)
+
+
+## Add a favorited project to the first user profile:
+mydb.user.update({"_id": user_ids[0]}, 
+                 {"$set": {"project_favorites": project_ids[0]}})
 
 
 # for s in mydb.user.find():
