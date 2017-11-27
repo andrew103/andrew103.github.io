@@ -10,6 +10,8 @@ from .database.dbconnect import mongo
 from .views.index import index
 from .views.login import login
 
+from .apis import apis
+
 ############################################################################
 
 
@@ -24,4 +26,4 @@ APPLICATION_NAME = "Teambuilder"
 
 app.register_blueprint(index)
 app.register_blueprint(login)
-
+app.register_blueprint(apis)
