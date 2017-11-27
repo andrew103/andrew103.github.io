@@ -29,6 +29,7 @@ user_records = [
     "summary": "Developer ...",
     "email": "Joe@email.com",
     "skills": ["JavaScript", "Reach", "Java"],
+    "roles": ["Front end"],
     "date" : datetime.datetime.utcnow()
   },
 
@@ -36,6 +37,7 @@ user_records = [
     "summary": "Front-end Engineer ...",
     "email": "Jack@email.com",
     "skills": ["CSS", "AngularJS"],
+    "roles": ["Back end"],
     "date" : datetime.datetime.utcnow()
   }
 ]
@@ -47,7 +49,7 @@ project_records = [
   { "name": "Joe",
     "summary": "Developer ...",
     "skillsNeeded": ["JavaScript", "Reach", "Java"],
-    "rolesNeeded": ["Front-end", "Full-stack"],
+    "rolesNeeded": ["Front end", "Full stack"],
     "team_members": user_ids,
     "date" : datetime.datetime.utcnow()
   }
