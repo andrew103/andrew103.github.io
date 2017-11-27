@@ -48,8 +48,8 @@ user_ids = mydb.user.insert(user_records)
 project_records = [
   { "name": "Joe",
     "summary": "Developer ...",
-    "skillsNeeded": ["JavaScript", "React", "Java"],
-    "rolesNeeded": ["Front end", "Full stack"],
+    "skills": ["JavaScript", "React", "Java"],
+    "roles": ["Front end", "Full stack"],
     "team_members": user_ids,
     "date" : datetime.datetime.utcnow()
   }
